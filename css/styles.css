@@ -11,7 +11,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -21,20 +23,26 @@ body {
     line-height: 1.8;
 }
 
-h1, h2, h3 {
- font-weight: 900;
- margin: 1rem 0 4rem 0;   
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    margin: 1rem 0 4rem 0;
 }
+
 h1 {
     font-size: 4.8rem;
 }
+
 h2 {
     font-size: 5.8rem;
 }
+
 h3 {
     font-size: 5rem;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -56,6 +64,7 @@ img {
     padding-inline-start: .5rem 2rem;
     transition: background-color .3s;
 }
+
 .btn:hover {
     background-color: var(--gris);
     color: var(blanco);
@@ -65,6 +74,161 @@ img {
 .text-center {
     text-align: center;
 }
-.mt-5 { /*Margin top 5*/
+
+.mt-5 {
+    /*Margin top 5*/
     margin-top: 5rem;
+}
+
+/*----------------------*/
+
+/*header*/
+.header {
+    min-height: 60rem;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--blanco);
+    padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width: 1080px) { 
+    .header {
+        padding: 5rem 0;
+    }
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    height: calc(60rem - 4rem);
+    justify-content: space-between;
+}
+
+.nombre-sitio {
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 0 7rem 0 ;
+
+}
+
+@media (min-width: 768px) {
+    .nombre-sitio {
+        font-size: 5rem;
+    }
+}
+
+.nombre-sitio span {
+    font-weight: 900;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (min-width: 768px) {
+    .contacto {
+        align-items: flex-end;
+        text-align: end;
+    }
+}
+
+.contacto a {
+    color: var(--blanco);
+}
+
+.telefono {
+    display: flex;
+    font-weight: 600;
+}
+
+.telefono::before {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 2.5rem;
+    background-image: url(../img/telefono.png);
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 1rem;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.navegacion a:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--negro);
+    transition: 0.2s;
+}
+
+.navegacion a {
+    color: var(--blanco);
+    padding: 0.25rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        text-align: right;
+    }
+
+    .navegacion a {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1080px) {
+    .navegacion a {
+        font-size: 2rem;
+    }
+
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+}
+
+.slogan {
+    text-align: center;
+}
+
+.slogan h1 {
+    margin: 0;
+    line-height: 5rem;
+}
+
+@media (min-width: 768px) {
+    .slogan {
+        text-align: right;
+    }
+
+    .slogan p {
+        font-size: 2rem;
+
+    }
 }
