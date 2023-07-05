@@ -81,6 +81,10 @@ img {
     margin-top: 5rem;
 }
 
+.mb-2{
+    margin-bottom: 2rem;
+}
+
 /*----------------------*/
 
 /*header*/
@@ -406,5 +410,34 @@ img {
     .galeria .imagen:nth-child(3) {
         grid-row: inherit;
         grid-column: inherit;
+    }
+}
+
+/*footer*/
+.footer .contacto{
+   align-items: center;
+}
+
+.footer {
+    height: 50rem;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: var(--blanco);
+
+    display: flex;
+    align-items: center;
+
+}
+
+@media (min-width: 768px) { 
+
+    .footer .navegacion {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .footer h1 {
+        margin: 3rem 0;
     }
 }
